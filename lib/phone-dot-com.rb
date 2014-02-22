@@ -24,7 +24,6 @@ class PhoneDotCom
     @request["Accept"] = "text/json"
     @request["Content-Type"] = "text/json"
     @request.basic_auth(ENV['PHONE_DOT_COM_KEY'],ENV['PHONE_DOT_COM_PASSWORD'])
-    # @request.body = ({"from" => "+13477742512", "to" => "+14242987773", "message" => "Test from Field Harmony"}).to_json
     return @request
   end
 
